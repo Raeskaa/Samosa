@@ -6,3 +6,11 @@ as you give credit with a link to my site. www.albertohartzet.com
 *
 Licence (CC BY-NC-SA 4.0) http://creativecommons.org/licenses/by-nc-sa/4.0/
 */
+$(document).ready(() => {
+    let typingElement = $('.typing');
+  
+    typingElement.on('click', (e) => {
+      typingElement.removeClass('animate');
+      setTimeout(() => typingElement.addClass('animate'), 1);
+    })
+  });
